@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: single-container-app
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/klakshma-tenant/single-container-app/single-container-app@sha256:6798802ab9fa94de9c572e73bf220919e2c4e69e70631d4cb46ebcd8c19c7334
+        name: my-single-container
+        resources: {}
+status: {}

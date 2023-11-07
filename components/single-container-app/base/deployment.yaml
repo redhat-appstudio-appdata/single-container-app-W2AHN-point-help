@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: single-container-app
     spec:
       containers:
-      - image: my-container:latest
+      - image: quay.io/redhat-user-workloads/klakshma-tenant/single-container-app/single-container-app@sha256:6798802ab9fa94de9c572e73bf220919e2c4e69e70631d4cb46ebcd8c19c7334
         name: my-single-container
         ports:
         - containerPort: 8080
